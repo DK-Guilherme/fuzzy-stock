@@ -1,6 +1,5 @@
-import subprocess
+import uvicorn
+import os
 
 if __name__ == "__main__":
-    subprocess.run(["uvicorn", "main:app", "--reload", "--port", "8000"])
-    
-
+    uvicorn.run("server.app:app", host="0.0.0.0", port=8000, reload=True)
