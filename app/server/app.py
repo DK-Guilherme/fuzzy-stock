@@ -1,9 +1,7 @@
 from fastapi import FastAPI
 
+from server.routes.company_router import router as company_router
+
 app = FastAPI()
 
-@app.get("/hello")
-async def get_hello():
-    return {
-        "Hello": "World"
-    }
+app.include_router(company_router, prefix="/company")
