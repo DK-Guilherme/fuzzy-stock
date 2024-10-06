@@ -8,6 +8,22 @@
         "documentation": {}
     },
     {
+        "label": "CompanyModel",
+        "importPath": "server.models.company_model",
+        "description": "server.models.company_model",
+        "isExtraImport": true,
+        "detail": "server.models.company_model",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "APIRouter",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -25,6 +41,14 @@
     },
     {
         "label": "find_all",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "find_by_id",
         "importPath": "server.services.company_service",
         "description": "server.services.company_service",
         "isExtraImport": true,
@@ -50,6 +74,14 @@
     },
     {
         "label": "find_all_company",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "find_company_by_id",
         "importPath": "server.repositories.company_repository",
         "description": "server.repositories.company_repository",
         "isExtraImport": true,
@@ -92,20 +124,11 @@
         "documentation": {}
     },
     {
-        "label": "company",
-        "kind": 5,
-        "importPath": "app.server.repositories.company_repository",
-        "description": "app.server.repositories.company_repository",
-        "peekOfCode": "company = [\n    {\n        \"_id\": 123,\n        \"name\": \"Amazon\",\n        \"CNPJ\":  123456789,\n        \"products\": []\n    },\n    {\n        \"_id\": 321,\n        \"name\": \"Google\",",
-        "detail": "app.server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
         "label": "router",
         "kind": 5,
         "importPath": "app.server.routes.company_router",
         "description": "app.server.routes.company_router",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_description=\"Companies found\")\nasync def find_all_companies():\n    res = await find_all()\n    return res",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_description=\"Companies found\")\nasync def find_all_companies():\n    res = await find_all()\n    return res\n@router.get(\"/{id}\", response_description=\"Company found!\")\nasync def find_company_by_id(id: int):\n    res = await find_by_id(id)\n    return res",
         "detail": "app.server.routes.company_router",
         "documentation": {}
     },
