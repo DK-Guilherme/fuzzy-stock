@@ -32,11 +32,52 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
         "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "server.repositories.company_repository",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "find_all_company",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "find_company_by_id",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_companies_products",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
         "documentation": {}
     },
     {
@@ -49,6 +90,14 @@
     },
     {
         "label": "find_by_id",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "find_company_products",
         "importPath": "server.services.company_service",
         "description": "server.services.company_service",
         "isExtraImport": true,
@@ -70,22 +119,6 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "find_all_company",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "find_company_by_id",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
         "documentation": {}
     },
     {
@@ -128,7 +161,7 @@
         "kind": 5,
         "importPath": "app.server.routes.company_router",
         "description": "app.server.routes.company_router",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_description=\"Companies found\")\nasync def find_all_companies():\n    res = await find_all()\n    return res\n@router.get(\"/{id}\", response_description=\"Company found!\")\nasync def find_company_by_id(id: int):\n    res = await find_by_id(id)\n    return res",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_description=\"Companies found\")\nasync def find_all_companies():\n    res = await find_all()\n    return res\n@router.get(\"/{id}\", response_description=\"Company found!\")\nasync def find_company_by_id(id: int):\n    res = await find_by_id(id)\n    return res\n@router.get(\"/{id}/products\", response_description=\"company products\")",
         "detail": "app.server.routes.company_router",
         "documentation": {}
     },

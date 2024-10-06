@@ -6,13 +6,13 @@ company: list[CompanyModel] = [
         "_id": 123,
         "name": "Amazon",
         "CNPJ":  123456789,
-        "products": []
+        "products": [{ "produto": "produto"}, { "produto": "produto"}]
     },
     {
         "_id": 321,
         "name": "Google",
         "CNPJ":  1804108341,
-        "products": []
+        "products": [{ "produto": "produto"}, { "produto": "produto"}]
     }
 ]
            
@@ -24,5 +24,9 @@ async def find_company_by_id(id: int):
     for c in company:
         if c['_id'] == id:
             return c
-        else: 
-            return Response(status_code=404)
+
+async def get_companies_products(id: int):
+    for c in company:
+        print(c)
+        if c['_id'] == id:
+            return c['products']
