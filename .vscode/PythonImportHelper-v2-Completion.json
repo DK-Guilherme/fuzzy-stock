@@ -16,6 +16,14 @@
         "documentation": {}
     },
     {
+        "label": "CompanyModel",
+        "importPath": "server.models.company_model",
+        "description": "server.models.company_model",
+        "isExtraImport": true,
+        "detail": "server.models.company_model",
+        "documentation": {}
+    },
+    {
         "label": "Response",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -25,6 +33,14 @@
     },
     {
         "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -74,6 +90,14 @@
     },
     {
         "label": "get_companies_products",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "post_company",
         "importPath": "server.repositories.company_repository",
         "description": "server.repositories.company_repository",
         "isExtraImport": true,

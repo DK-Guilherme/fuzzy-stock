@@ -1,5 +1,6 @@
 from server.models.company_model import CompanyModel
 from fastapi import Response
+from server.models.company_model import CompanyModel
 
 company: list[CompanyModel] = [
     {
@@ -30,3 +31,6 @@ async def get_companies_products(id: int):
         print(c)
         if c['_id'] == id:
             return c['products']
+
+async def post_company(company_tosave: CompanyModel):
+    company.append(company_tosave)
