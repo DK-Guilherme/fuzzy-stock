@@ -1,5 +1,14 @@
 [
     {
+        "label": "psycopg2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "psycopg2",
+        "description": "psycopg2",
+        "detail": "psycopg2",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -8,6 +17,78 @@
         "documentation": {}
     },
     {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Annotated",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "get_database_connection",
+        "importPath": "server.config.db.database",
+        "description": "server.config.db.database",
+        "isExtraImport": true,
+        "detail": "server.config.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "CompanyModel",
+        "importPath": "server.models.company_model",
+        "description": "server.models.company_model",
+        "isExtraImport": true,
+        "detail": "server.models.company_model",
+        "documentation": {}
+    },
+    {
         "label": "CompanyModel",
         "importPath": "server.models.company_model",
         "description": "server.models.company_model",
@@ -21,14 +102,6 @@
         "description": "server.models.company_model",
         "isExtraImport": true,
         "detail": "server.models.company_model",
-        "documentation": {}
-    },
-    {
-        "label": "Response",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
         "documentation": {}
     },
     {
@@ -64,68 +137,52 @@
         "documentation": {}
     },
     {
-        "label": "server.repositories.company_repository",
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "# find_all",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "# find_by_id",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "# find_company_products",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "create_company",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
+        "label": "sqlalchemy",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "find_all_company",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "find_company_by_id",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "get_companies_products",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "post_company",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "find_all",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
-        "documentation": {}
-    },
-    {
-        "label": "find_by_id",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
-        "documentation": {}
-    },
-    {
-        "label": "find_company_products",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "detail": "sqlalchemy",
         "documentation": {}
     },
     {
@@ -146,6 +203,38 @@
         "documentation": {}
     },
     {
+        "label": "# find_all_company",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "# find_company_by_id",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "# get_companies_products",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "create_company_repo",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
         "label": "router",
         "importPath": "server.routes.company_router",
         "description": "server.routes.company_router",
@@ -163,12 +252,12 @@
         "documentation": {}
     },
     {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
+        "label": "get_database_connection",
+        "kind": 2,
+        "importPath": "app.server.config.db.database",
+        "description": "app.server.config.db.database",
+        "peekOfCode": "def get_database_connection():\n    return psycopg2.connect(\n        host=\"localhost\",\n        user=\"postgres\",\n        password=\"3693\",\n        database=\"fuzzystock\"\n    )",
+        "detail": "app.server.config.db.database",
         "documentation": {}
     },
     {
@@ -176,8 +265,17 @@
         "kind": 6,
         "importPath": "app.server.models.company_model",
         "description": "app.server.models.company_model",
-        "peekOfCode": "class CompanyModel(BaseModel):\n    id : int\n    name: str\n    CNPJ: int\n    products: list[dict]",
+        "peekOfCode": "class CompanyModel(BaseModel):\n    id : int\n    name: str\n    cnpj: int",
         "detail": "app.server.models.company_model",
+        "documentation": {}
+    },
+    {
+        "label": "Product",
+        "kind": 6,
+        "importPath": "app.server.models.product_model",
+        "description": "app.server.models.product_model",
+        "peekOfCode": "class Product(BaseModel):\n    id: Annotated[int, Field(...)]\n    name: Annotated[str, Field(max_length=30)]\n    price: Annotated[float, Field(max_length=999999)]\n    description: Annotated[str, Field(max_digits=150)]\n    qtdin_stock: Annotated[int, Field(max_length=999)]\n    last_update: Annotated[str, Field(max_digits=10)]\n    updated_by: Annotated[str, Field(max_digits=20)]\n    created_at: Annotated[str, Field(max_digits=10)]",
+        "detail": "app.server.models.product_model",
         "documentation": {}
     },
     {
@@ -185,7 +283,7 @@
         "kind": 5,
         "importPath": "app.server.routes.company_router",
         "description": "app.server.routes.company_router",
-        "peekOfCode": "router = APIRouter()\n@router.get(\"/\", response_description=\"Companies found\")\nasync def find_all_companies():\n    res = await find_all()\n    return res\n@router.get(\"/{id}\", response_description=\"Company found!\")\nasync def find_company_by_id(id: int):\n    res = await find_by_id(id)\n    return res\n@router.get(\"/{id}/products\", response_description=\"company products\")",
+        "peekOfCode": "router = APIRouter()\n# @router.get(\"/\", response_description=\"Companies found\")\n# async def find_all_companies():\n#     res = await find_all()\n#     return res\n# @router.get(\"/{id}\", response_description=\"Company found!\")\n# async def find_company_by_id(id: int):\n#     res = await find_by_id(id)\n#     return res \n# @router.get(\"/{id}/products\", response_description=\"company products\")",
         "detail": "app.server.routes.company_router",
         "documentation": {}
     },
@@ -196,6 +294,15 @@
         "description": "app.server.app",
         "peekOfCode": "app = FastAPI()\napp.include_router(company_router, prefix=\"/company\")",
         "detail": "app.server.app",
+        "documentation": {}
+    },
+    {
+        "label": "solution",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def solution(start: int, goal: int):\n    res = start ^ goal\n    while res != goal:\n        res = res ^ goal\n        res = res + goal\n        print(res)\n    return res\nprint(solution(10, 7))",
+        "detail": "test",
         "documentation": {}
     }
 ]
