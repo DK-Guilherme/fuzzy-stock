@@ -1,6 +1,7 @@
 from server.repositories.company_repository import (
     get_all_company_from_db,
-    create_company_repo
+    create_company_repo,
+    get_company_from_db_by_id
 )
 from server.models.company_model import CompanyModel
 
@@ -21,3 +22,13 @@ async def get_all_companies() -> list[CompanyModel]:
         return obj_list
     except () as e:
         print(e)
+        
+async def get_company_by_id(id: str) -> CompanyModel:
+    try:
+        company = await get_company_from_db_by_id(id)
+        print(company)
+        company_obj: CompanyModel = CompanyModel(id=company[0], name=company[1], cnpj=company[2])
+        return company_obj
+    except () as e:
+        print(e)
+        return e

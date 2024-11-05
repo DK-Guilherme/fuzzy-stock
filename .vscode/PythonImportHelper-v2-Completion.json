@@ -146,6 +146,14 @@
         "documentation": {}
     },
     {
+        "label": "get_company_by_id",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
+        "isExtraImport": true,
+        "detail": "server.services.company_service",
+        "documentation": {}
+    },
+    {
         "label": "get_all_company_from_db",
         "importPath": "server.repositories.company_repository",
         "description": "server.repositories.company_repository",
@@ -155,6 +163,14 @@
     },
     {
         "label": "create_company_repo",
+        "importPath": "server.repositories.company_repository",
+        "description": "server.repositories.company_repository",
+        "isExtraImport": true,
+        "detail": "server.repositories.company_repository",
+        "documentation": {}
+    },
+    {
+        "label": "get_company_from_db_by_id",
         "importPath": "server.repositories.company_repository",
         "description": "server.repositories.company_repository",
         "isExtraImport": true,
