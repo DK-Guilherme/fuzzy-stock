@@ -1,7 +1,7 @@
 from pydantic import BaseModel, Field
 from typing import Annotated
 
-class Product(BaseModel):
+class ProductModel(BaseModel):
     id: Annotated[int, Field(...)]
     name: Annotated[str, Field(max_length=30)]
     price: Annotated[float, Field(max_length=999999)]

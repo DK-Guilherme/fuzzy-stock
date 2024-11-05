@@ -26,14 +26,6 @@
         "documentation": {}
     },
     {
-        "label": "load_dotenv",
-        "importPath": "dotenv",
-        "description": "dotenv",
-        "isExtraImport": true,
-        "detail": "dotenv",
-        "documentation": {}
-    },
-    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -58,22 +50,6 @@
         "documentation": {}
     },
     {
-        "label": "BaseModel",
-        "importPath": "pydantic",
-        "description": "pydantic",
-        "isExtraImport": true,
-        "detail": "pydantic",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "Annotated",
         "importPath": "typing",
         "description": "typing",
@@ -82,19 +58,11 @@
         "documentation": {}
     },
     {
-        "label": "Annotated",
-        "importPath": "typing",
-        "description": "typing",
+        "label": "dumps",
+        "importPath": "json",
+        "description": "json",
         "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
+        "detail": "json",
         "documentation": {}
     },
     {
@@ -146,14 +114,6 @@
         "documentation": {}
     },
     {
-        "label": "Response",
-        "importPath": "fastapi",
-        "description": "fastapi",
-        "isExtraImport": true,
-        "detail": "fastapi",
-        "documentation": {}
-    },
-    {
         "label": "FastAPI",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -170,30 +130,6 @@
         "documentation": {}
     },
     {
-        "label": "# find_all",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
-        "documentation": {}
-    },
-    {
-        "label": "# find_by_id",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
-        "documentation": {}
-    },
-    {
-        "label": "# find_company_products",
-        "importPath": "server.services.company_service",
-        "description": "server.services.company_service",
-        "isExtraImport": true,
-        "detail": "server.services.company_service",
-        "documentation": {}
-    },
-    {
         "label": "create_company",
         "importPath": "server.services.company_service",
         "description": "server.services.company_service",
@@ -202,49 +138,15 @@
         "documentation": {}
     },
     {
-        "label": "sqlalchemy",
-        "kind": 6,
+        "label": "get_all_companies",
+        "importPath": "server.services.company_service",
+        "description": "server.services.company_service",
         "isExtraImport": true,
-        "importPath": "sqlalchemy",
-        "description": "sqlalchemy",
-        "detail": "sqlalchemy",
+        "detail": "server.services.company_service",
         "documentation": {}
     },
     {
-        "label": "dumps",
-        "importPath": "bson.json_util",
-        "description": "bson.json_util",
-        "isExtraImport": true,
-        "detail": "bson.json_util",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
-        "documentation": {}
-    },
-    {
-        "label": "# find_all_company",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "# find_company_by_id",
-        "importPath": "server.repositories.company_repository",
-        "description": "server.repositories.company_repository",
-        "isExtraImport": true,
-        "detail": "server.repositories.company_repository",
-        "documentation": {}
-    },
-    {
-        "label": "# get_companies_products",
+        "label": "get_all_company_from_db",
         "importPath": "server.repositories.company_repository",
         "description": "server.repositories.company_repository",
         "isExtraImport": true,
@@ -331,11 +233,11 @@
         "documentation": {}
     },
     {
-        "label": "Product",
+        "label": "ProductModel",
         "kind": 6,
         "importPath": "app.server.models.product_model",
         "description": "app.server.models.product_model",
-        "peekOfCode": "class Product(BaseModel):\n    id: Annotated[int, Field(...)]\n    name: Annotated[str, Field(max_length=30)]\n    price: Annotated[float, Field(max_length=999999)]\n    description: Annotated[str, Field(max_digits=150)]\n    qtdin_stock: Annotated[int, Field(max_length=999)]\n    last_update: Annotated[str, Field(max_digits=10)]\n    updated_by: Annotated[str, Field(max_digits=20)]\n    created_at: Annotated[str, Field(max_digits=10)]",
+        "peekOfCode": "class ProductModel(BaseModel):\n    id: Annotated[int, Field(...)]\n    name: Annotated[str, Field(max_length=30)]\n    price: Annotated[float, Field(max_length=999999)]\n    description: Annotated[str, Field(max_digits=150)]\n    qtdin_stock: Annotated[int, Field(max_length=999)]\n    last_update: Annotated[str, Field(max_digits=10)]\n    updated_by: Annotated[str, Field(max_digits=20)]\n    created_at: Annotated[str, Field(max_digits=10)]",
         "detail": "app.server.models.product_model",
         "documentation": {}
     },
@@ -344,7 +246,7 @@
         "kind": 5,
         "importPath": "app.server.routes.company_router",
         "description": "app.server.routes.company_router",
-        "peekOfCode": "router = APIRouter()\n# @router.get(\"/\", response_description=\"Companies found\")\n# async def find_all_companies():\n#     res = await find_all()\n#     return res\n# @router.get(\"/{id}\", response_description=\"Company found!\")\n# async def find_company_by_id(id: int):\n#     res = await find_by_id(id)\n#     return res \n# @router.get(\"/{id}/products\", response_description=\"company products\")",
+        "peekOfCode": "router = APIRouter()\n@router.get(\"/get_companies\", response_description=\"create company\")\nasync def get_companies():\n    try:\n        companies_list = await get_all_companies()\n        return companies_list\n    except () as e:\n        print(e)\n        return JSONResponse(status_code=500)\n@router.post(\"/\", response_description=\"create company\")",
         "detail": "app.server.routes.company_router",
         "documentation": {}
     },

@@ -2,7 +2,7 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 
-load_dotenv('./env')
+load_dotenv('.env')
 host = os.environ.get("HOST")
 user = os.environ.get("USER")
 password = os.environ.get("DB_PASSWORD")
