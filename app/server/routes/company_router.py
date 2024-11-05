@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 from fastapi import APIRouter, Response
 from fastapi.responses import JSONResponse
 
@@ -32,7 +33,7 @@ router = APIRouter()
     
 @router.post("/", response_description="VAI TOMA NO CU")
 async def post_company(company: CompanyModel):
-    try: 
+    try:
         await create_company(company)
     except () as e:
         return JSONResponse(status_code=500)

@@ -9,6 +9,31 @@
         "documentation": {}
     },
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
         "importPath": "pydantic",
         "description": "pydantic",
@@ -256,7 +281,43 @@
         "kind": 2,
         "importPath": "app.server.config.db.database",
         "description": "app.server.config.db.database",
-        "peekOfCode": "def get_database_connection():\n    return psycopg2.connect(\n        host=\"localhost\",\n        user=\"postgres\",\n        password=\"3693\",\n        database=\"fuzzystock\"\n    )",
+        "peekOfCode": "def get_database_connection():\n    return psycopg2.connect(\n        host=host,\n        user=user,\n        password=password,\n        database=db_name\n    )",
+        "detail": "app.server.config.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "host",
+        "kind": 5,
+        "importPath": "app.server.config.db.database",
+        "description": "app.server.config.db.database",
+        "peekOfCode": "host = os.environ.get(\"HOST\")\nuser = os.environ.get(\"USER\")\npassword = os.environ.get(\"DB_PASSWORD\")\ndb_name = os.environ.get(\"DB_NAME\")\ndef get_database_connection():\n    return psycopg2.connect(\n        host=host,\n        user=user,\n        password=password,\n        database=db_name",
+        "detail": "app.server.config.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "user",
+        "kind": 5,
+        "importPath": "app.server.config.db.database",
+        "description": "app.server.config.db.database",
+        "peekOfCode": "user = os.environ.get(\"USER\")\npassword = os.environ.get(\"DB_PASSWORD\")\ndb_name = os.environ.get(\"DB_NAME\")\ndef get_database_connection():\n    return psycopg2.connect(\n        host=host,\n        user=user,\n        password=password,\n        database=db_name\n    )",
+        "detail": "app.server.config.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "password",
+        "kind": 5,
+        "importPath": "app.server.config.db.database",
+        "description": "app.server.config.db.database",
+        "peekOfCode": "password = os.environ.get(\"DB_PASSWORD\")\ndb_name = os.environ.get(\"DB_NAME\")\ndef get_database_connection():\n    return psycopg2.connect(\n        host=host,\n        user=user,\n        password=password,\n        database=db_name\n    )",
+        "detail": "app.server.config.db.database",
+        "documentation": {}
+    },
+    {
+        "label": "db_name",
+        "kind": 5,
+        "importPath": "app.server.config.db.database",
+        "description": "app.server.config.db.database",
+        "peekOfCode": "db_name = os.environ.get(\"DB_NAME\")\ndef get_database_connection():\n    return psycopg2.connect(\n        host=host,\n        user=user,\n        password=password,\n        database=db_name\n    )",
         "detail": "app.server.config.db.database",
         "documentation": {}
     },
